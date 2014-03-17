@@ -1,0 +1,46 @@
+/*Include new font face*/
+@font-face {
+font-family: Cutie Patootie Hollow;
+src: url("../fonts/Cutie Patootie Hollow.ttf");
+}
+@font-face {
+font-family: Just Me Again Down Here;
+src: url("../fonts/JustMeAgainDownHere.ttf");
+}
+#logo{
+height: 70px;
+width: 70px;
+margin: -17px;
+}
+#logo img{
+height: 170px;
+width:130px;
+}
+
+.content{
+background: url("../images/paperp.png") no-repeat;
+margin-top: 150px;
+margin-left: 300px;
+width: 800px;
+height: 500px;
+}
+.theform, .theform table {
+border: none;
+font-family: Just Me Again Down Here;
+font-size: 30px;
+padding-top: 0px;
+margin-left: 100px;
+}
+#username ,#pword, #login, #cancel{
+font-family: Just Me Again Down Here;
+font-size: 30px;
+}
+#login, #cancel{
+border-radius: 50%;
+width: 100px;
+height: 100px;
+}
+
+
+
+

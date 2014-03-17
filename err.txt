@@ -1,0 +1,50 @@
+window.onload = initAll;
+
+ //var imgsrc = new Array ("images/gallery/smile1.jpg","images/gallery/tired2.jpg","images/gallery/tired.jpg");
+function initAll(){
+
+ slideImg();
+ 
+}
+function slideImg(){
+   var i = 0;
+   if (i > 3)
+     i = 0;
+	else 
+	  i += 2;
+   
+    var t = setInterval("",1000);
+	//document.getElementById("#sld").src = next();
+    
+   
+}
+function getlement(t){
+ var imgsrc = new Array ("images/gallery/smile1.jpg","images/gallery/tired.jpg","images/gallery/tired.jpg");
+ // document.write(imgsrc[t]);
+  return (imgsrc[t]);
+}
+
+
+<div class = "navigator">
+	
+	  <ul>
+	    <li>
+		  <a href = "#">
+		     <image id = "homenote" src= "images/homenote.png">
+			 <span id = "home">Home</span>
+		  </a>
+		</li>
+		<li>
+		  <a href = "#">
+		    <image id = "whitenote" src = "images/whitenote0.png">
+		    <span id = "view">View Ads</span>
+		   </a>
+		</li>
+		<li>
+		  <a href = "#">
+		   <image id = "pinknote" src= "images/pinknote.png">
+		   <span id = "place">Place Ad</span>
+		   </a>
+		</li>
+	  </ul>
+	 </div>

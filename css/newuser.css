@@ -1,0 +1,43 @@
+@font-face {
+font-family: Just Me Again Down Here;
+src: url("../fonts/JustMeAgainDownHere.ttf");
+}
+
+#logo{
+height: 70px;
+width: 70px;
+margin: -17px;
+}
+#logo img{
+height: 170px;
+width:130px;
+}
+
+.theform{
+font-family: Just Me Again Down Here;
+background-image:url("../images/paperplace.jpg");
+font-size: 30px;
+width: 500px;
+margin-top: 10px;
+margin-left: 500px;
+}
+.theform table{
+font-size: 25px;
+}
+#fname, #surname,#mname, #word1,#word2,#add{
+border-bottom:solid 1px;
+border-top: none;
+border-left: none;
+border-right: none;
+font-family: Just Me Again Down Here;
+font-size: 25px;
+background: transparent;
+}
+#reg{
+font-family: Just Me Again Down Here;
+font-size: 25px;
+background: transparent;
+border-radius: 50%;
+width: 100px;
+height: 100px;
+}

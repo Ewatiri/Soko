@@ -1,0 +1,130 @@
+/*Include new font face*/
+@font-face {
+font-family: Cutie Patootie Hollow;
+src: url("../fonts/Cutie Patootie Hollow.ttf");
+}
+@font-face {
+font-family: You make Me Smile;
+src: url("../fonts/You make Me Smile.ttf");
+}
+#logo{
+height: 70px;
+width: 70px;
+margin: -17px;
+}
+#logo img{
+height: 170px;
+width:130px;
+}
+/* Set the title bgcolor and the font to be used*/
+.navigator{
+/**background-color: #ffffff;*/
+font-family: Cutie Patootie Hollow;
+font-size: 30px;
+height: 100px;
+margin-left: 250px;
+margin-top: -82px;
+z-index: 8;
+}
+/*Remove bullets from the list*/
+.navigator ul{
+list-style: none;
+}
+.navigator li{
+float: left;
+padding-left: 100px;
+}
+.navigator ul li a{
+text-decoration: none;
+}
+
+#homenote #whitenote #pinknote{
+position: relative;
+}
+
+#home{
+position: absolute;
+width: 100px;
+top: 50px;
+left: 410px;
+}
+#place{
+position: absolute;
+width: 100px;
+top: 50px;
+left: 800px
+}
+#view{
+position: absolute;
+left: 600px;
+width: 100px;
+top: 50px;
+}
+
+.content{
+background: url("../images/paper.png");
+margin-top: 10px;
+margin-left: 200px;
+width: 800px;
+height: 500px;
+background-position: static;
+}
+.content span{
+font-family: You make Me Smile;
+position: absolute;
+font-size: 30px;
+width: 500px;
+top: 100px;
+left: 600px
+}
+
+#frame {
+margin-left: 0px;
+margin-top: 0px;
+padding: 0px;
+z-index: 1;
+position: static;
+background:url("../images/logo41.png") no-repeat;
+background-position: 20px 30px;
+background-size:  250px 250px;
+}
+
+#cat{
+margin-top: -318px;
+margin-left: 34px;
+z-index:0;
+}
+#caption{
+margin-left: -370px;
+margin-top: 290px;
+font-size: 25px;
+}
+.footer a{
+text-decoration: none;
+font-family: You make Me Smile;
+font-size: 30px;
+}
+#abtus{
+position: absolute;
+width: 100px;
+top: 555px;
+left: 225px
+}
+#abtus2{
+position: absolute;
+width: 100px;
+top: 555px;
+left: 215px
+}
+#msg, input{
+font-family: You make Me Smile;
+font-size: 30px;
+}
+#msg{
+width: 500px;
+position: absolute;
+height: 500px;
+margin-top: -500px;
+margin-left: 495px;
+display: none;
+}

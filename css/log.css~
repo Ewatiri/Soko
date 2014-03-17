@@ -1,0 +1,86 @@
+@font-face {
+font-family: Just Me Again Down Here;
+src: url("../fonts/JustMeAgainDownHere.ttf");
+}
+@font-face {
+font-family: You make Me Smile;
+src: url("../fonts/You make Me Smile.ttf");
+}
+#logo{
+height: 70px;
+width: 70px;
+margin: -17px;
+}
+body{
+background:url("../images/paperplace.jpg");
+font-family: Just Me Again Down Here;
+}
+#logo img{
+height: 170px;
+width:130px;
+}
+.navbar{
+margin-left: 170px;
+}
+
+.navbar ul  li{
+padding-left: 200px;
+list-style: none;
+float:left;
+}
+
+.navbar ul  a {
+text-decoration: none;
+}
+#lg{
+position: absolute;
+width: 100px;
+top: 110px;
+left: 480px
+}
+#sup{
+position: absolute;
+width: 100px;
+top: 118px;
+left: 820px
+}
+#panel1 {
+height: 200px;
+width: 400px;
+margin-left:300px;
+margin-top:95px;
+position: absolute;
+display: none;
+}
+
+.theform table {
+font-family: You make Me Smile;
+font-size: 30px;
+}
+#emailaddy,#pword,#fname,#mname,#surname,#word1,#word2,#add{
+font-family: You make Me Smile;
+font-size: 30px;
+background: transparent;
+border-top: none;
+border-left: none;
+border-right: none;
+border-bottom:solid 1px;
+}
+legend,#login, #cancel,#reg{
+font-family: You make Me Smile;
+font-size: 30px;
+}
+span{
+font-family: Just Me Again Down Here;
+font-size: 25px;
+width: 50px;
+}
+#panel2 {
+height: 500px;
+width: 400px;
+margin-left:770px;
+margin-top:95px;
+position:absolute;
+display: none;
+}
+

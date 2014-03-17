@@ -1,0 +1,18 @@
+ul  li ul li{
+/*display: none;*/
+background: none repeat scroll 0 0 #CCCC86;
+border: 0.1em outset #BBBBBB;
+width: 400px;
+}
+ul{
+list-style: none;
+}
+ul a {
+text-decoration:none;
+}
+ul  li{
+border: 0.4em outset;
+border-color: transparent;
+width: 440px;
+float: left;
+}

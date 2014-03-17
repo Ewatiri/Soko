@@ -1,0 +1,59 @@
+.logo{
+font-family: Monotype Corsiva;
+margin-bottom:0;
+}
+body{
+background-image: url("../images/bground.jpg");
+}
+#adbody{
+background-image: url("../images/bground.jpg");
+}
+#contact{
+display: none;
+background-color: white;
+border: 1px solid;
+height: 400px;
+width: 700px;
+}
+#submenu{
+display: none;
+}
+#menu {
+width: 662px;
+margin-left: 145px;
+margin-top:-112px;
+}
+#us:before{
+content:url("../images/abtus.png");
+}
+#home:before{
+content:url("../images/home.png");
+}
+#cont:before{
+content:url("../images/contact.png");
+}
+#vad:before{
+content:url("../images/contact.png");
+
+#vad {
+background-color: #E5E5E5;
+height: 100px;
+width: 110px;
+padding:10px;
+}
+#us{
+background-color:#E5E5E5;
+height: 100px;
+width: 110px;
+position:fixed;
+}
+#home{
+background-color:#E5E5E5;
+height: 100px;
+width: 110px;
+}
+#cont{
+background-color:#E5E5E5;
+height: 100px;
+width: 110px;
+}

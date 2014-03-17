@@ -1,0 +1,47 @@
+#logo img{
+
+}
+.navigator ul{
+margin-left: 300px;
+margin-top: -64px;
+}
+.navigator ul li  {
+float: left;
+padding-left: 50px;
+list-style: none;
+}
+.navigator ul li a img{
+height: 70px;
+width: 100px;
+}
+
+body{
+background:url("../images/paper.png") no-repeat;
+background-size: 1000px 1200px;
+}
+/* Increase image size when the mouse hovers over it*/
+.navigator ul li :hover img{
+height: 150px;
+width: 150px;
+}
+.navigator ul li :hover +li img{
+height: 100px;
+width: 120px;
+}
+
+.navigator ul li :hover +li +li img{
+height: 90px;
+width: 100px;
+}
+#placead{
+background:url("../images/bg9.jpg") no-repeat;
+height: 100px;
+width: 500px;
+margin-left: 50px;
+}
+#placead{
+display:none;
+}
+#hi{
+background:url("../images/note.jpg") no-repeat;
+}

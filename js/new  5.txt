@@ -1,0 +1,132 @@
+$.ajax({type:'POST',url:'http://localhost/mystuff/Soko/logval.php',data:$('#uform').serialize(),success: function(error){
+   alert(error);
+  }
+});
+return false;
+
+
+if (isset($_POST['Register']))
+{
+  if (empty($_POST['firname']) ||empty($_POST['mname']) || empty($_POST['sname']) || empty($_POST['pword']) || empty($_POST['pword2']) || empty($_POST['eadd']))
+  {
+     $error = 1;
+  }
+  
+   else
+ 
+     $error = 0;
+
+   echo $error;
+  
+}
+var ajaxVariable = false; // the variable which will make AJAX a possibility for our tutorial
+var formdata = new FormData();
+formdata.append('firname', 'bob');
+formdata.append('mname', '1');
+
+function ajaxFunction() {
+
+document.write(formdata);    
+       ajaxVariable = false;
+
+	try{
+			// For latest web browsers like Chrome, Firefox, Safari
+		ajaxVariable = new XMLHttpRequest();
+	} catch (e){
+		// In case of Internet Explorer 6 there are two ways of calling the object
+		try{
+			ajaxVariable = new ActiveXObject("Msxml2.XMLHTTP"); // the usual way
+		} catch (e) {
+			try{
+				ajaxVariable = new ActiveXObject("Microsoft.XMLHTTP"); // creating ActiveX controls which will use older XML library
+			} catch (e){
+				// When no browser works
+				alert("Get a working web browser, please!");
+				return false;
+			}
+		}
+	}
+
+        ajaxVariable.onreadystatechange = ajaxReply; // whenever the ready state is changed
+
+	ajaxVariable.open('POST', 'http://localhost/mystuff/Soko/logval.php', true); // opens a request to server
+
+        ajaxVariable.send(null); // closes the request
+
+		// Now, the code waits unless the ready state changes.
+		// After every change ajaxReply() is executed
+
+	return true;
+
+    } // end function ajaxFunction
+
+function ajaxReply() { // your code's logic goes here
+
+	if (ajaxVariable.readyState == 4) { // 4 mean page loaded successfully
+
+		if (ajaxVariable.status == 200) { // 200 mean all is OK
+
+			if (ajaxVariable.responseText == '1') { // if the entry was in our range (1-4)
+
+				alert('Table available!');
+
+			}
+
+			else { // otherwise
+
+				alert('We are full!');
+
+			}
+
+		} // end if
+
+		else { // if the status code is anything else (a rare case though)
+
+			alert('Something weird occurred. HTTP error code ' + ajaxVariable.status.toString() + '.');
+			return; // exit
+
+		}
+
+	} // end if
+
+} // end function ajaxReply
+
+
+
+function getObj(){
+ var xmlHttp = new XMLHttpRequest();
+ 
+ return xmlHttp;
+}
+
+var xmlhttp = getObj();
+
+function ajaxfunction(){
+ var getdate = new Date();
+ if (xmlhttp){
+    var f = document.getElementById("name");
+	xmlhttp.open("POST","val.php",true);
+	xmlhttp.onreadystatechange = handleResponse();
+	xmlhttp.send("name1=er");
+	xmlhttp.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
+ }
+}
+
+function handleResponse()
+{
+ if (xmlhttp.readyState == 4)
+ {
+    if (xmlhttp.status == 200)
+	{
+	  document.write ( "Success");
+	}
+	else
+	{
+	  document.write("error2");
+	}
+ }
+ else
+ {
+   document.write(xmlhttp.readyState);
+ }
+}
